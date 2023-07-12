@@ -23,15 +23,17 @@ class BurgerShop {
     }
     
     func selectType(type: String) {
+        var builder: BurgerBuilder? = nil
+
         if type == "Beef" {
-            // Code for beef type
             builder = BeefBurgerBuilder(country: country)
         }
         if type == "Veggie" {
-            // Code for veggie type
             builder = VeggieBurgerBuilder(country: country)
         }
+
     }
+
 
 }
 

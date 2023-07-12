@@ -14,6 +14,14 @@
 		C3B38ADB2A5EE84F00007A07 /* BurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */; };
 		C3B38ADD2A5EE87600007A07 /* VeggieBurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADC2A5EE87600007A07 /* VeggieBurgerBuilder.swift */; };
 		C3B38ADF2A5EE88500007A07 /* BeefBurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */; };
+		C3B38AE12A5EF48C00007A07 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AE02A5EF48C00007A07 /* Burger.swift */; };
+		C3B38AE32A5EF84800007A07 /* VeggieBurger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AE22A5EF84800007A07 /* VeggieBurger.swift */; };
+		C3B38AE52A5EF87900007A07 /* BeefBurger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AE42A5EF87900007A07 /* BeefBurger.swift */; };
+		C3B38AE72A5EFCB800007A07 /* BurgerDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AE62A5EFCB800007A07 /* BurgerDecorator.swift */; };
+		C3B38AE92A5EFCFF00007A07 /* HotSauce.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AE82A5EFCFF00007A07 /* HotSauce.swift */; };
+		C3B38AEB2A5EFD1300007A07 /* Lettuce.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEA2A5EFD1300007A07 /* Lettuce.swift */; };
+		C3B38AED2A5EFD2400007A07 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEC2A5EFD2400007A07 /* Tomatoes.swift */; };
+		C3B38AEF2A5EFD3000007A07 /* Pickles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEE2A5EFD3000007A07 /* Pickles.swift */; };
 		C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +34,14 @@
 		C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerBuilder.swift; sourceTree = "<group>"; };
 		C3B38ADC2A5EE87600007A07 /* VeggieBurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeggieBurgerBuilder.swift; sourceTree = "<group>"; };
 		C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeefBurgerBuilder.swift; sourceTree = "<group>"; };
+		C3B38AE02A5EF48C00007A07 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		C3B38AE22A5EF84800007A07 /* VeggieBurger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeggieBurger.swift; sourceTree = "<group>"; };
+		C3B38AE42A5EF87900007A07 /* BeefBurger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeefBurger.swift; sourceTree = "<group>"; };
+		C3B38AE62A5EFCB800007A07 /* BurgerDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerDecorator.swift; sourceTree = "<group>"; };
+		C3B38AE82A5EFCFF00007A07 /* HotSauce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSauce.swift; sourceTree = "<group>"; };
+		C3B38AEA2A5EFD1300007A07 /* Lettuce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lettuce.swift; sourceTree = "<group>"; };
+		C3B38AEC2A5EFD2400007A07 /* Tomatoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
+		C3B38AEE2A5EFD3000007A07 /* Pickles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickles.swift; sourceTree = "<group>"; };
 		C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +79,15 @@
 				C391B9932A3B4035005B0C3C /* ContentView.swift */,
 				C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */,
 				C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */,
+				C3B38AE02A5EF48C00007A07 /* Burger.swift */,
 				C3B38ADC2A5EE87600007A07 /* VeggieBurgerBuilder.swift */,
+				C3B38AE82A5EFCFF00007A07 /* HotSauce.swift */,
+				C3B38AEA2A5EFD1300007A07 /* Lettuce.swift */,
+				C3B38AEC2A5EFD2400007A07 /* Tomatoes.swift */,
+				C3B38AEE2A5EFD3000007A07 /* Pickles.swift */,
+				C3B38AE62A5EFCB800007A07 /* BurgerDecorator.swift */,
+				C3B38AE22A5EF84800007A07 /* VeggieBurger.swift */,
+				C3B38AE42A5EF87900007A07 /* BeefBurger.swift */,
 				C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */,
 				C391B9952A3B4037005B0C3C /* Assets.xcassets */,
 				C391B9972A3B4037005B0C3C /* Preview Content */,
@@ -149,12 +173,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B38AE12A5EF48C00007A07 /* Burger.swift in Sources */,
 				C3B38ADB2A5EE84F00007A07 /* BurgerBuilder.swift in Sources */,
+				C3B38AE52A5EF87900007A07 /* BeefBurger.swift in Sources */,
+				C3B38AEF2A5EFD3000007A07 /* Pickles.swift in Sources */,
 				C391B9942A3B4035005B0C3C /* ContentView.swift in Sources */,
+				C3B38AE92A5EFCFF00007A07 /* HotSauce.swift in Sources */,
+				C3B38AE32A5EF84800007A07 /* VeggieBurger.swift in Sources */,
+				C3B38AEB2A5EFD1300007A07 /* Lettuce.swift in Sources */,
 				C3B38ADF2A5EE88500007A07 /* BeefBurgerBuilder.swift in Sources */,
+				C3B38AE72A5EFCB800007A07 /* BurgerDecorator.swift in Sources */,
 				C391B9922A3B4035005B0C3C /* TokBurgerApp.swift in Sources */,
 				C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */,
 				C3B38ADD2A5EE87600007A07 /* VeggieBurgerBuilder.swift in Sources */,
+				C3B38AED2A5EFD2400007A07 /* Tomatoes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

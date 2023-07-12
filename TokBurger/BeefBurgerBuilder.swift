@@ -8,8 +8,9 @@
 import Foundation
 
 class BeefBurgerBuilder: BurgerBuilder {
-    init(country: Country) {
-        burger = BeefBurger(country: country)
+     init(country: String) {
+         super.init()
+        self.burger = BeefBurger(country: country)
     }
 }
 

@@ -7,8 +7,10 @@
 
 import Foundation
 
-class VeganBurgerBuilder: BurgerBuilder {
-    init(country: Country) {
-        burger = VeganBurger(country: country)
+class VeggieBurgerBuilder: BurgerBuilder {
+     init(country: String) {
+         super.init()
+        self.burger = VeggieBurger(country: country)
     }
 }
+

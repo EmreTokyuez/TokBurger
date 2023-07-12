@@ -1,67 +1,59 @@
-//
-//  BurgerBuilder.swift
-//  TokBurger
-//
-//  Created by Emre Tokyüz on 12.07.23.
-//
 
 import Foundation
+
 class BurgerBuilder {
-    var burger: Burger
+    var burger: Burger?
 
-    init(burger: Burger) {
-        self.burger = burger
-    }
-
-    func checkHotSauce() -> Bool {
-        if Main.db.getPrice(burger, HotSauce.self) == nil {
-            return false
-        } else {
-            return true
-        }
-    }
-
-    func addHotSauce() {
-        burger = HotSauce(burger: burger)
-    }
-
-    func checkJalapenos() -> Bool {
-        if Main.db.getPrice(burger, Jalapenos.self) == nil {
-            return false
-        } else {
-            return true
-        }
-    }
-
-    func addJalapenos() {
-        burger = Jalapenos(burger: burger)
-    }
-
-    func checkSalad() -> Bool {
-        if Main.db.getPrice(burger, Salad.self) == nil {
-            return false
-        } else {
-            return true
-        }
-    }
-
-    func addSalad() {
-        burger = Salad(burger: burger)
-    }
-
-    func checkFries() -> Bool {
-        if Main.db.getPrice(burger, Fries.self) == nil {
-            return false
-        } else {
-            return true
-        }
-    }
-
-    func addFries() {
-        burger = Fries(burger: burger)
-    }
-
-    func getBurger() -> Burger {
-        return burger
-    }
+//    func checkHotSauce() -> Bool {
+//        if Main.db.getPrice(burger, type(of: HotSauce()).typeName) == nil {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
+//
+//    func addHotSauce() {
+//        self.burger = HotSauce(burger: burger)
+//    }
+//
+//    func checkJalapenos() -> Bool {
+//        if Main.db.getPrice(burger, type(of: Jalapenos()).typeName) == nil {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
+//
+//    func addJalapenos() {
+//        self.burger = Jalapenos(burger: burger)
+//    }
+//
+//    func checkSalad() -> Bool {
+//        if Main.db.getPrice(burger, type(of: Salad()).typeName) == nil {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
+//
+//    func addSalad() {
+//        self.burger = Salad(burger: burger)
+//    }
+//
+//    func checkFries() -> Bool {
+//        if Main.db.getPrice(burger, type(of: Fries()).typeName) == nil {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
+//
+//    func addFries() {
+//        self.burger = Fries(burger: burger)
+//    }
+//
+//    func getBurger() -> Burger? {
+//        return self.burger
+//    }
 }
+
