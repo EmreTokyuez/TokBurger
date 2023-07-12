@@ -7,4 +7,32 @@
 
 import Foundation
 
-class BurgerShop
+
+class BurgerShop {
+    var listorders: [String: Double] = [:]
+    var countryPrices: [String: Double] = [
+        "USA": 1.7,
+        "Canada": 1.8,
+        "UK": 1.2,
+        "Australia": 2.2
+    ]
+    var country: String
+    
+    init(country: String) {
+        self.country = country
+    }
+    
+    func selectType(type: String) {
+        if type == "Beef" {
+            // Code for beef type
+            builder = BeefBurgerBuilder(country: country)
+        }
+        if type == "Veggie" {
+            // Code for veggie type
+            builder = VeggieBurgerBuilder(country: country)
+        }
+    }
+
+}
+
+
