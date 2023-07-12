@@ -6,19 +6,16 @@
 //
 
 import Foundation
-class BurgerDecorator: Burger {
-//    var burger: Burger
-//
-//    init(burger: Burger) {
-//        self.burger = burger
-//        super.init(burgerType: burger.getBurgerType(), country: burger.getCountry())
-//    }
-//
-//    override func getDescription() -> String {
-//        fatalError("Must override getDescription() in subclass")
-//    }
-//
-//    override func cost() -> Double {
-//        return burger.cost() + Main.db.getPrice(self, nil)
-//    }
+
+protocol BurgerDecorator: Burger {
+    var burger: Burger { get }
+
+    func getDescription() -> String
+}
+
+extension BurgerDecorator {
+    func cost() -> Double {
+//        return burger.cost() + (Main.db.getPrice(self, nil) ?? 0)
+        return 0;
+    }
 }

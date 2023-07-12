@@ -7,12 +7,31 @@
 
 import Foundation
 class Tomatoes: BurgerDecorator {
-//    init(burger: Burger) {
-//        super.init(burgerType: burger.getBurgerType(), country: burger.getCountry())
-//        self.burger = burger
-//    }
-//
-//    override func getDescription() -> String {
-//        return burger.getDescription() + ", Hot Sauce"
-//    }
+    var description: String
+    
+    
+
+    let burger: Burger
+
+    init(burger: Burger) {
+        self.burger = burger
+        self.description = ""
+    }
+
+
+    var country: String {
+        return burger.country
+    }
+
+    var burgerType: String? {
+        return burger.burgerType
+    }
+
+    func cost() -> Double {
+        return burger.cost()
+    }
+    func getDescription() -> String {
+        return burger.description + ", Tomatoes"
+
+    }
 }

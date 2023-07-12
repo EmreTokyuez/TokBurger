@@ -6,17 +6,22 @@
 //
 
 import Foundation
-
 class VeggieBurger: Burger {
-    override init(country: String) {
-        super.init(country: country)
-        burgerType = "Veggie"
-        description = "Veggie Burger (\(country))"
+    let description: String
+    let country: String
+    let burgerType: String?
+
+    init(country: String) {
+        self.description = "Veggie Burger (\(country))"
+        self.country = country
+        self.burgerType = "Veggie"
     }
-    //    override func cost() -> Double {
-    //        return Main.db.getPrice(self, nil)
-    //    }
-    
+
+    func cost() -> Double {
+        return 0;
+        
+    }
 }
+
 
 
