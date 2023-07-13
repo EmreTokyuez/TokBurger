@@ -25,12 +25,12 @@ struct StartScreen: View {
     @StateObject var shop = BurgerShop()
     @State private var selectedCountry = "USA"
     let countries = ["USA", "Canada", "UK", "Australia"]
-    @State private var action: Int? = 0
+    @State private var action1: Int? = 0
     
     var body: some View {
         NavigationView{
             VStack {
-                NavigationLink(destination: SelectView(shop: shop), tag: 1, selection: $action) {
+                NavigationLink(destination: SelectView(shop: shop), tag: 1, selection: $action1) {
                     EmptyView()
                 }
                 Text("TokBurger")
@@ -45,7 +45,7 @@ struct StartScreen: View {
                 
                 Button(action: {
                     shop.country = selectedCountry
-                    self.action = 1
+                    self.action1 = 1
                 }
                 ) {
                     Text("Order")
@@ -76,8 +76,8 @@ struct StartScreen: View {
                         .padding(.top, -12)
                 }
                 
-                Spacer()
-            }.navigationTitle(Text("Start Menu"))
+                Spacer().navigationTitle("Start Menu")
+            }
         }
     }}
 

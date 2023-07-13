@@ -39,10 +39,10 @@ public  class BurgerShop: ObservableObject {
     func  selectType(type: String) {
        
         if type == "Beef" {
-                 builder = BeefBurgerBuilder(country: country)
+            builder = BeefBurgerBuilder(country: country ?? "USA")
                }
                if type == "Veggie" {
-                   builder = VeggieBurgerBuilder(country: country)
+                   builder = VeggieBurgerBuilder(country: country ?? "USA")
                }
     }
     
