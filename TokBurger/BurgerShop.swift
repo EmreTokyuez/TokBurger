@@ -68,7 +68,11 @@ public  class BurgerShop: ObservableObject {
         selectIngredients(selectedIngredients: i)
         listOrders.append((builder?.getBurger())!)
         
-        
+        func createOrder( i: [String]){
+            selectIngredients(selectedIngredients: i)
+            listOrders.append((builder?.getBurger())!)
+            
+            
         
         
     }

@@ -33,7 +33,7 @@ struct SelectView: View {
                                 Text(patty.rawValue)
                             }
                             .padding()
-                            .background(selectedPatty == patty ? Color.yellow : Color.white)
+                            .background(selectedPatty == patty ? Color.white : Color.white)
                             .cornerRadius(10)
                             .shadow(radius: 5)
                         }
@@ -59,6 +59,8 @@ struct SelectView: View {
                     
                     Button(action: {
                         self.action2 = 1
+                        shop.selectType(type: selectedPatty?.rawValue ?? "Beef")
+
                     }) {
                         Text("Continue")
                             .foregroundColor(selectedPatty != nil ? .white : .gray)

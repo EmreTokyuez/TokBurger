@@ -77,6 +77,8 @@ struct IngredientSelectionView: View {
             
                             Button(action: {
                                 self.action3 = 2
+                                
+                                shop.createOrder(i: [String])
             
                             }) {
                                 Text("Order")
