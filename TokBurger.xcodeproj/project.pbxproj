@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C363A4312A600F2100132B6C /* IngredientSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363A4302A600F2100132B6C /* IngredientSelectionView.swift */; };
+		C363A4332A60102E00132B6C /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363A4322A60102E00132B6C /* CheckOutView.swift */; };
 		C391B9922A3B4035005B0C3C /* TokBurgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391B9912A3B4035005B0C3C /* TokBurgerApp.swift */; };
 		C391B9942A3B4035005B0C3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391B9932A3B4035005B0C3C /* ContentView.swift */; };
 		C391B9962A3B4037005B0C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391B9952A3B4037005B0C3C /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C363A4302A600F2100132B6C /* IngredientSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSelectionView.swift; sourceTree = "<group>"; };
+		C363A4322A60102E00132B6C /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 		C391B98E2A3B4035005B0C3C /* TokBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C391B9912A3B4035005B0C3C /* TokBurgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokBurgerApp.swift; sourceTree = "<group>"; };
 		C391B9932A3B4035005B0C3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				C3B38AE62A5EFCB800007A07 /* BurgerDecorator.swift */,
 				C3B38AE22A5EF84800007A07 /* VeggieBurger.swift */,
 				C3B38AE42A5EF87900007A07 /* BeefBurger.swift */,
+				C363A4302A600F2100132B6C /* IngredientSelectionView.swift */,
+				C363A4322A60102E00132B6C /* CheckOutView.swift */,
 				C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */,
 				C391B9952A3B4037005B0C3C /* Assets.xcassets */,
 				C391B9972A3B4037005B0C3C /* Preview Content */,
@@ -246,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B38AE12A5EF48C00007A07 /* Burger.swift in Sources */,
+				C363A4332A60102E00132B6C /* CheckOutView.swift in Sources */,
 				C3B38ADB2A5EE84F00007A07 /* BurgerBuilder.swift in Sources */,
 				C3B38AE52A5EF87900007A07 /* BeefBurger.swift in Sources */,
 				C3B38AEF2A5EFD3000007A07 /* Pickles.swift in Sources */,
@@ -257,6 +264,7 @@
 				C3B38AEB2A5EFD1300007A07 /* Lettuce.swift in Sources */,
 				C3B38ADF2A5EE88500007A07 /* BeefBurgerBuilder.swift in Sources */,
 				C3B38AE72A5EFCB800007A07 /* BurgerDecorator.swift in Sources */,
+				C363A4312A600F2100132B6C /* IngredientSelectionView.swift in Sources */,
 				C391B9922A3B4035005B0C3C /* TokBurgerApp.swift in Sources */,
 				C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */,
 				C3B38AFE2A5FDD8F00007A07 /* maintest.swift in Sources */,
@@ -415,6 +423,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +453,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

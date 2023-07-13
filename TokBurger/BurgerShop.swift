@@ -12,11 +12,12 @@ import SwiftUI
 
 
 
-  class BurgerShop: ObservableObject {
-    @Published var isCreated = false
+public  class BurgerShop: ObservableObject {
+    @Published var country: String?
     @Published var listOrders = [any Burger]();
     var builder: BurgerBuilder? = nil
     var isToGo = false
+    
 
     @Published var countryPrices: [String: Double] = [
         "USA": 1.7,
@@ -24,14 +25,13 @@ import SwiftUI
         "UK": 1.2,
         "Australia": 2.2
     ]
-    var country: String
-    init(country: String) {
+    public init() {
+    }
+    public init(country: String) {
         self.country = country
-        isCreated = true
     }
     init(country: String, b: Bool) {
         self.country = country
-        isCreated = true
         isToGo = b
     }
 

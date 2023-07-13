@@ -22,13 +22,17 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct StartScreen: View {
+    @StateObject var shop = BurgerShop()
     @State private var selectedCountry = "USA"
     let countries = ["USA", "Canada", "UK", "Australia"]
-    @State private var showSelectView = false // Add a state variable to control the visibility
+    @State private var action: Int? = 0
     
     var body: some View {
-        NavigationView {
+        NavigationView{
             VStack {
+                NavigationLink(destination: SelectView(shop: shop), tag: 1, selection: $action) {
+                    EmptyView()
+                }
                 Text("TokBurger")
                     .font(.title)
                     .padding(.top, 50)
@@ -40,8 +44,10 @@ struct StartScreen: View {
                     .padding(.top, 50)
                 
                 Button(action: {
-                    showSelectView = true // Set showSelectView to true when the button is pressed
-                }) {
+                    shop.country = selectedCountry
+                    self.action = 1
+                }
+                ) {
                     Text("Order")
                         .font(.title)
                         .foregroundColor(.white)
@@ -71,12 +77,12 @@ struct StartScreen: View {
                 }
                 
                 Spacer()
-            }
+            }.navigationTitle(Text("Start Menu"))
         }
-        .background(
-            NavigationLink(destination: SelectView(), isActive: $showSelectView) {
-                EmptyView()
-            }
-        )
-    }
-}
+    }}
+
+
+
+
+
+

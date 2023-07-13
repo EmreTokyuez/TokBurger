@@ -9,13 +9,12 @@ import Foundation
 class Lettuce: BurgerDecorator {
     var description: String
     
-    
 
     let burger: Burger
 
     init(burger: Burger) {
         self.burger = burger
-        self.description = burger.description + "  + Tomatoes"
+        self.description = burger.description + "  + Lettuce"
     }
 
 
@@ -28,7 +27,7 @@ class Lettuce: BurgerDecorator {
     }
 
     func cost() -> Double {
-        return burger.cost() + 0.3
+        return burger.cost() + 0.9
     }
     func getDescription() -> String {
         return burger.description + ", Lettuce"

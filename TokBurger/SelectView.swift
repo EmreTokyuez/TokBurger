@@ -1,17 +1,24 @@
 import SwiftUI
 
 struct SelectView: View {
-    @EnvironmentObject var shop: BurgerShop
+    @ObservedObject var shop: BurgerShop
     @State private var selectedPatty: PattyType?
     @State private var cartCount = 0
+    @State private var action: Int? = 0
 
     let pattyOptions: [PattyType] = [.beef, .veggie]
 
     var body: some View {
+        NavigationLink(destination: IngredientsView(), tag: 1, selection: $action) {
+            EmptyView()
+        }
+        NavigationLink(destination: CheckoutView(), tag: 2, selection: $action) {
+            EmptyView()
+        }
         VStack(spacing: 20) {
             Text("Select the Patty")
                 .font(.title)
-
+            Spacer()
             HStack(spacing: 20) {
                 ForEach(pattyOptions, id: \.self) { patty in
                     Button(action: {
@@ -20,7 +27,7 @@ struct SelectView: View {
                         VStack {
                             Image(patty.imageName)
                                 .resizable()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 125, height: 125)
                             Text(patty.rawValue)
                         }
                         .padding()
@@ -30,13 +37,12 @@ struct SelectView: View {
                     }
                 }
             }
-            .alignmentGuide(.center) { d in d[.leading] }
 
             Spacer()
 
-            VStack {
+            HStack {
                 Button(action: {
-                    // Handle cart button action
+                    self.action = 2
                 }) {
                     Image(systemName: "cart")
                         .foregroundColor(.primary)
@@ -47,8 +53,10 @@ struct SelectView: View {
                         .foregroundColor(.primary)
                 }
 
+                Spacer()
+
                 Button(action: {
-                    // Handle continue button action
+                    self.action = 1
                 }) {
                     Text("Continue")
                         .foregroundColor(selectedPatty != nil ? .white : .gray)
@@ -59,14 +67,10 @@ struct SelectView: View {
                 }
                 .disabled(selectedPatty == nil)
             }
-            .alignmentGuide(.center) { d in d[.leading] }
         }
         .padding()
     }
 }
-
-
-
 
 
 enum PattyType: String {
@@ -85,6 +89,7 @@ enum PattyType: String {
 
 struct SelectView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectView()
+        var test
+        SelectView(shop: testshop)
     }
 }
