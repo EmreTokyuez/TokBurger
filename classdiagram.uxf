@@ -1,0 +1,99 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>540</x><y>30</y><w>290</w><h>190</h></coordinates><panel_attributes>BurgerShop
+--
+BurgerBuilder builder
+String country
+Dictionary[String, Double] countryPrice
+isToGo
+List[Burger] Orders
+--
+checkout()
+createOrder(String type, [String] ingredients)
+deleteOrder(String type, [String] ingredients)
+getOrders()
+selectIngredients([String] selectedIngredients)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>220</y><w>150</w><h>130</h></coordinates><panel_attributes>VeggieBurgerBuilder
+--
+Burger burger
+--
+addTomatoes()
+addHotSauce()
+addLettuce()
+addPickles()
+getBurger() -&gt; Burger?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>220</y><w>160</w><h>140</h></coordinates><panel_attributes>BeefBurgerBuilder
+--
+Burger burger
+--
+addTomatoes()
+addHotSauce()
+addLettuce()
+addPickles()
+getBurger() -&gt; Burger?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>620</y><w>240</w><h>140</h></coordinates><panel_attributes>BeefBurger
+--
+String description
+String country
+Double price
+Dictionary[String, Double] countryPrice
+String BurgerType
+--
+cost() -&gt; Double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>780</y><w>160</w><h>150</h></coordinates><panel_attributes>Lettuce
+--
+String description
+Burger burger
+String country
+String burgerType
+
+--
+cost() -&gt;
+getDescription() -&gt; String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>610</x><y>270</y><w>140</w><h>150</h></coordinates><panel_attributes>BurgerBuilder
+--
+addTomatoes()
+addHotSauce()
+addLettuce()
+addPickles()
+getBurger() -&gt; Burger?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>960</x><y>570</y><w>160</w><h>100</h></coordinates><panel_attributes>BurgerDecorater
+--
+getDescription() -&gt; String
+cost() -&gt; Double </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>620</y><w>240</w><h>140</h></coordinates><panel_attributes>VeggieBurger
+--
+String description
+String country
+Double price
+Dictionary[String, Double] countryPrice
+String BurgerType
+--
+cost() -&gt; Double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>780</y><w>160</w><h>150</h></coordinates><panel_attributes>HotSauce
+--
+String description
+Burger burger
+String country
+String burgerType
+
+--
+cost() -&gt;
+getDescription() -&gt; String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1040</x><y>780</y><w>160</w><h>150</h></coordinates><panel_attributes>Tomatoes
+--
+String description
+Burger burger
+String country
+String burgerType
+
+--
+cost() -&gt;
+getDescription() -&gt; String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>780</y><w>160</w><h>150</h></coordinates><panel_attributes>Pickle
+--
+String description
+Burger burger
+String country
+String burgerType
+
+--
+cost() -&gt;
+getDescription() -&gt; String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>0</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>210</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>230</y><w>430</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>410;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>230</y><w>320</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;300;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>340</y><w>510</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;490;120</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>580</x><y>450</y><w>200</w><h>150</h></coordinates><panel_attributes>Burger
+--
+cost() -&gt; Double
+getOrderDescription() -&gt; String
+getDescription() -&gt; String
+getCountry() -&gt; String
+getBurgerType() -&gt; String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>350</y><w>410</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>390;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>540</y><w>490</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>470;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>550</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>0</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>500</y><w>280</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;260;90</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>650</y><w>390</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>370;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>660</y><w>230</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>670</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>660</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;130</additional_attributes></element></diagram>

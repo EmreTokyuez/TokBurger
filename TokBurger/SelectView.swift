@@ -3,13 +3,13 @@ import SwiftUI
 struct SelectView: View {
     @ObservedObject var shop: BurgerShop
     @State private var selectedPatty: PattyType?
-    @State private var cartCount = 0
+    @State private var cartCount = 0;
     @State private var action2: Int? = 0
 
     let pattyOptions: [PattyType] = [.beef, .veggie]
 
     var body: some View {
-        NavigationLink(destination: IngredientSelectionView(), tag: 1, selection: $action2) {
+        NavigationLink(destination: IngredientSelectionView(shop: shop), tag: 1, selection: $action2) {
             EmptyView()
         }
         NavigationLink(destination: CheckoutView(), tag: 2, selection: $action2) {
@@ -50,7 +50,7 @@ struct SelectView: View {
                         Text("Cart")
                             .foregroundColor(.primary)
                             .padding(.leading, 5)
-                        Text("(\(cartCount))")
+                        Text("(\(shop.listOrders.count))")
                             .foregroundColor(.primary)
                     }
                     

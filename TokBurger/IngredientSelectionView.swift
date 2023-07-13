@@ -14,6 +14,7 @@ struct Ingredient: Identifiable {
 }
 
 struct IngredientSelectionView: View {
+    @ObservedObject var shop: BurgerShop
     @State private var ingredients: [Ingredient] = [
         Ingredient(name: "Pickles"),
         Ingredient(name: "Hot Sauce"),
@@ -57,7 +58,12 @@ struct IngredientSelectionView: View {
             
                             }) {
                                 Image(systemName: "cart")
-                                    .font(.title)
+                                    .foregroundColor(.primary)
+                                Text("Cart")
+                                    .foregroundColor(.primary)
+                                    .padding(.leading, 5)
+                                Text("(\(shop.listOrders.count))")
+                                    .foregroundColor(.primary)
                             }
                             .padding()
             
@@ -91,6 +97,6 @@ private func toggleIngredientSelection(_ ingredient: Ingredient) {
 
                                    struct IngredientSelectionView_Previews: PreviewProvider {
                                        static var previews: some View {
-                                           IngredientSelectionView()
+                                           IngredientSelectionView(shop: BurgerShop())
                                        }
                                    }
