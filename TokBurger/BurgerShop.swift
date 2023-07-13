@@ -12,7 +12,7 @@ import SwiftUI
 
 
 
-class BurgerShop: ObservableObject {
+  class BurgerShop: ObservableObject {
     @Published var isCreated = false
     @Published var listOrders = [any Burger]();
     var builder: BurgerBuilder? = nil
