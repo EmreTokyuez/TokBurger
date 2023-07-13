@@ -16,6 +16,7 @@ class BurgerShop: ObservableObject {
     @Published var isCreated = false
     @Published var listOrders = [any Burger]();
     var builder: BurgerBuilder? = nil
+    var isToGo = false
 
     @Published var countryPrices: [String: Double] = [
         "USA": 1.7,
@@ -27,6 +28,11 @@ class BurgerShop: ObservableObject {
     init(country: String) {
         self.country = country
         isCreated = true
+    }
+    init(country: String, b: Bool) {
+        self.country = country
+        isCreated = true
+        isToGo = b
     }
 
     
@@ -57,33 +63,53 @@ class BurgerShop: ObservableObject {
 
     }
     
-    func createOrder(i: [String]){
-        selectType(type: country)
+    func createOrder(t: String, i: [String]){
+        selectType(type: t)
         selectIngredients(selectedIngredients: i)
-        
+        listOrders.append((builder?.getBurger())!)
         
         
         
         
     }
+    
+    func createOrder(t: String, i: [String], b: Bool){
+        selectType(type: t)
+        selectIngredients(selectedIngredients: i)
+        isToGo = b
+        listOrders.append((builder?.getBurger())!)
+        
+        
+        
+        
+    }
+
     func checkout() -> Double{
         var  total = 0.0
         listOrders.forEach {
-            total += $0.cost()
+            total += $0.cost() 
             
         }
+        print("To go?: ")
+        print(isToGo)
         return total
         }
+    func getorders(){
+        listOrders.forEach {
+            print($0.getOrderDescription())
+        }
+    }
+        
     
-    func deleteOrder(b: Burger) {
-        if let index = self.listOrders.firstIndex(where: { $0.description == b.description && $0.country == b.country && $0.burgerType == b.burgerType }) {
+    func deleteOrder(t: String, i: [String]) {
+        if let index = self.listOrders.firstIndex(where: { $0.burgerType == t && i.allSatisfy($0.getOrderDescription().contains) }) {
             self.listOrders.remove(at: index)
             print("Order deleted.")
         } else {
             print("Order not found.")
         }
-        
     }
+
 
 }
     

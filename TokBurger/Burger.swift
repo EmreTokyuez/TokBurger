@@ -23,6 +23,6 @@ extension Burger {
         let costString = String(format: "%.2f", cost())
         let locale = Locale(identifier: Locale.current.identifier)
         let currency = locale.currencySymbol ?? ""
-        return "\(description): \(costString) \(currency)"
+        return "\(self.description): \(costString) \(currency)"
     }
 }

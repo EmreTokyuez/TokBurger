@@ -15,7 +15,6 @@ protocol BurgerDecorator: Burger {
 
 extension BurgerDecorator {
     func cost() -> Double {
-//        return burger.cost() + (Main.db.getPrice(self, nil) ?? 0)
-        return 0;
+        return 0.0;
     }
 }

@@ -15,7 +15,7 @@ class Lettuce: BurgerDecorator {
 
     init(burger: Burger) {
         self.burger = burger
-        self.description = ""
+        self.description = burger.description + "  + Tomatoes"
     }
 
 

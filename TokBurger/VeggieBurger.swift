@@ -10,6 +10,14 @@ class VeggieBurger: Burger {
     let description: String
     let country: String
     let burgerType: String?
+    var price = 3.0;
+    @Published var countryPrices: [String: Double] = [
+        "USA": 1.7,
+        "Canada": 1.8,
+        "UK": 1.2,
+        "Australia": 2.2
+    ]
+
 
     init(country: String) {
         self.description = "Veggie Burger (\(country))"
@@ -18,8 +26,7 @@ class VeggieBurger: Burger {
     }
 
     func cost() -> Double {
-        return 0;
-        
+        return price  * (countryPrices[country] ?? 1);
     }
 }
 
