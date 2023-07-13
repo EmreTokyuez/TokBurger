@@ -24,6 +24,7 @@ struct ContentView_Previews: PreviewProvider {
 struct StartScreen: View {
     @State private var selectedCountry = "USA"
     let countries = ["USA", "Canada", "UK", "Australia"]
+    @State private var burgerShop: BurgerShop?
 
     var body: some View {
         VStack {
@@ -38,8 +39,10 @@ struct StartScreen: View {
                 .padding(.top, 50)
             
             Button(action: {
-                // Handle order button action
-            }) {
+                burgerShop = BurgerShop(country: selectedCountry)
+                
+            }
+            ) {
                 Text("Order")
                     .font(.title)
                     .foregroundColor(.white)
@@ -72,4 +75,7 @@ struct StartScreen: View {
         }
     }
 }
+
+
+
 
