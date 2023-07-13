@@ -14,7 +14,7 @@ import SwiftUI
 
 class BurgerShop: ObservableObject {
     @Published var isCreated = false
-    @Published var listOrders: [Burger];
+    @Published var listOrders = [any Burger]();
     var builder: BurgerBuilder? = nil
 
     @Published var countryPrices: [String: Double] = [
@@ -66,16 +66,30 @@ class BurgerShop: ObservableObject {
         
         
     }
-    func checkout(){
-        Double total = (for burger in listOrders){}
+    func checkout() -> Double{
+        var  total = 0.0
+        listOrders.forEach {
+            total += $0.cost()
+            
         }
+        return total
+        }
+    
+    func deleteOrder(b: Burger) {
+        if let index = self.listOrders.firstIndex(where: { $0.description == b.description && $0.country == b.country && $0.burgerType == b.burgerType }) {
+            self.listOrders.remove(at: index)
+            print("Order deleted.")
+        } else {
+            print("Order not found.")
+        }
+        
     }
-    func deleteOrder(b: Burger){}
 
-    
-
-    
 }
+    
+
+    
+
 
 
 
