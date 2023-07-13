@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-//@main
-//struct TokBurgerApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//    }
-//}
+@main
+struct TokBurgerApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}

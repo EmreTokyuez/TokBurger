@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct SelectView: View {
+    @EnvironmentObject var shop: BurgerShop
     @State private var selectedPatty: PattyType?
     @State private var cartCount = 0
 
@@ -29,7 +30,11 @@ struct SelectView: View {
                     }
                 }
             }
-            HStack {
+            .alignmentGuide(.center) { d in d[.leading] }
+
+            Spacer()
+
+            VStack {
                 Button(action: {
                     // Handle cart button action
                 }) {
@@ -41,9 +46,6 @@ struct SelectView: View {
                     Text("(\(cartCount))")
                         .foregroundColor(.primary)
                 }
-
-                Spacer()
-                
 
                 Button(action: {
                     // Handle continue button action
@@ -57,10 +59,15 @@ struct SelectView: View {
                 }
                 .disabled(selectedPatty == nil)
             }
+            .alignmentGuide(.center) { d in d[.leading] }
         }
         .padding()
     }
 }
+
+
+
+
 
 enum PattyType: String {
     case beef = "Beef Patty"

@@ -24,58 +24,59 @@ struct ContentView_Previews: PreviewProvider {
 struct StartScreen: View {
     @State private var selectedCountry = "USA"
     let countries = ["USA", "Canada", "UK", "Australia"]
-    @State private var burgerShop: BurgerShop?
-
+    @State private var showSelectView = false // Add a state variable to control the visibility
+    
     var body: some View {
-        VStack {
-            Text("TokBurger")
-                .font(.title)
-                .padding(.top, 50)
-            
-            Image("burger")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200)
-                .padding(.top, 50)
-            
-            Button(action: {
-                burgerShop = BurgerShop(country: selectedCountry)
-                
-            }
-            ) {
-                Text("Order")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
-            .padding(.top, 50)
-            
-            Text("Select your country:")
-                .font(.headline)
-                .padding(.top, 30)
-            
+        NavigationView {
             VStack {
-                Picker(selection: $selectedCountry, label: Text("")) {
-                    ForEach(countries, id: \.self) { country in
-                        Text(country)
-                    }
-                }
-                .pickerStyle(MenuPickerStyle())
-                .frame(width: 200)
-                .padding(.top, 10)
+                Text("TokBurger")
+                    .font(.title)
+                    .padding(.top, 50)
                 
-                Image(systemName: "chevron.down")
-                    .font(.system(size: 12, weight: .semibold))
-                    .padding(.top, -12)
+                Image("burger")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .padding(.top, 50)
+                
+                Button(action: {
+                    showSelectView = true // Set showSelectView to true when the button is pressed
+                }) {
+                    Text("Order")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                .padding(.top, 50)
+                
+                Text("Select your country:")
+                    .font(.headline)
+                    .padding(.top, 30)
+                
+                VStack {
+                    Picker(selection: $selectedCountry, label: Text("")) {
+                        ForEach(countries, id: \.self) { country in
+                            Text(country)
+                        }
+                    }
+                    .pickerStyle(MenuPickerStyle())
+                    .frame(width: 200)
+                    .padding(.top, 10)
+                    
+                    Image(systemName: "chevron.down")
+                        .font(.system(size: 12, weight: .semibold))
+                        .padding(.top, -12)
+                }
+                
+                Spacer()
             }
-            
-            Spacer()
         }
+        .background(
+            NavigationLink(destination: SelectView(), isActive: $showSelectView) {
+                EmptyView()
+            }
+        )
     }
 }
-
-
-
-

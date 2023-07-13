@@ -24,7 +24,7 @@
 		C3B38AEF2A5EFD3000007A07 /* Pickles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEE2A5EFD3000007A07 /* Pickles.swift */; };
 		C3B38AF12A5F636F00007A07 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AF02A5F636F00007A07 /* SelectView.swift */; };
 		C3B38AF52A5F71B700007A07 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AF42A5F71B700007A07 /* IngredientsView.swift */; };
-		C3B38AFE2A5FDD8F00007A07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AFD2A5FDD8F00007A07 /* main.swift */; };
+		C3B38AFE2A5FDD8F00007A07 /* maintest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AFD2A5FDD8F00007A07 /* maintest.swift */; };
 		C3B38B062A5FF18000007A07 /* TokBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38B052A5FF18000007A07 /* TokBurgerTests.swift */; };
 		C3B38B0D2A5FF27E00007A07 /* BurgerShopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38B0C2A5FF27E00007A07 /* BurgerShopTest.swift */; };
 		C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */; };
@@ -59,7 +59,7 @@
 		C3B38AEE2A5EFD3000007A07 /* Pickles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickles.swift; sourceTree = "<group>"; };
 		C3B38AF02A5F636F00007A07 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		C3B38AF42A5F71B700007A07 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
-		C3B38AFD2A5FDD8F00007A07 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C3B38AFD2A5FDD8F00007A07 /* maintest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maintest.swift; sourceTree = "<group>"; };
 		C3B38B032A5FF18000007A07 /* TokBurgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokBurgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B38B052A5FF18000007A07 /* TokBurgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokBurgerTests.swift; sourceTree = "<group>"; };
 		C3B38B0C2A5FF27E00007A07 /* BurgerShopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerShopTest.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				C391B9912A3B4035005B0C3C /* TokBurgerApp.swift */,
 				C391B9932A3B4035005B0C3C /* ContentView.swift */,
 				C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */,
-				C3B38AFD2A5FDD8F00007A07 /* main.swift */,
+				C3B38AFD2A5FDD8F00007A07 /* maintest.swift */,
 				C3B38AF02A5F636F00007A07 /* SelectView.swift */,
 				C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */,
 				C3B38AE02A5EF48C00007A07 /* Burger.swift */,
@@ -259,7 +259,7 @@
 				C3B38AE72A5EFCB800007A07 /* BurgerDecorator.swift in Sources */,
 				C391B9922A3B4035005B0C3C /* TokBurgerApp.swift in Sources */,
 				C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */,
-				C3B38AFE2A5FDD8F00007A07 /* main.swift in Sources */,
+				C3B38AFE2A5FDD8F00007A07 /* maintest.swift in Sources */,
 				C3B38ADD2A5EE87600007A07 /* VeggieBurgerBuilder.swift in Sources */,
 				C3B38AED2A5EFD2400007A07 /* Tomatoes.swift in Sources */,
 			);
