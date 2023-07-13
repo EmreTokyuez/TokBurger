@@ -21,14 +21,20 @@ struct IngredientSelectionView: View {
         Ingredient(name: "Tomatoes"),
         Ingredient(name: "Lettuce")
     ]
+//    @State private var ingredientprices : [String: Double] = [
+//        "Lettuce": 0.9,
+//        "Tomatoes": 1.2,
+//        "Hot Sauce": 0.9,
+//        "Pickles": 2.2
+//    ]
     @State private var action3: Int? = 0
         @State private var cartCount = 0
 
     var body: some View {
-        NavigationLink(destination: CheckoutView(), tag: 1, selection: $action3) {
+        NavigationLink(destination: CheckoutView(shop: shop), tag: 1, selection: $action3) {
             EmptyView()
         }
-        NavigationLink(destination: CheckoutView(), tag: 2, selection: $action3) {
+        NavigationLink(destination: CheckoutView(shop: shop), tag: 2, selection: $action3) {
             EmptyView()
         }
         VStack(spacing: 20) {
@@ -73,7 +79,7 @@ struct IngredientSelectionView: View {
                                 self.action3 = 2
             
                             }) {
-                                Text("Continue")
+                                Text("Order")
                                     .foregroundColor(.white)
                                     .padding()
                                     .background(Color.green)

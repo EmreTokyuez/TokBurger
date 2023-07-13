@@ -76,7 +76,7 @@ struct StartScreen: View {
                         .padding(.top, -12)
                 }
                 
-                Spacer().navigationTitle("Start Menu")
+                .navigationBarTitle("Start Menu" , displayMode: .inline)
             }
         }
     }}

@@ -12,11 +12,12 @@ struct SelectView: View {
         NavigationLink(destination: IngredientSelectionView(shop: shop), tag: 1, selection: $action2) {
             EmptyView()
         }
-        NavigationLink(destination: CheckoutView(), tag: 2, selection: $action2) {
+        NavigationLink(destination: CheckoutView(shop: shop), tag: 2, selection: $action2) {
             EmptyView()
         }
         
             VStack(spacing: 20) {
+                Spacer()
                 Text("Select the Patty")
                     .font(.title)
                 Spacer()
@@ -70,7 +71,7 @@ struct SelectView: View {
                 }
             }
             .padding()
-        .navigationTitle("Type Selection")
+        .navigationTitle("Patty Selection")
         
     }
 }

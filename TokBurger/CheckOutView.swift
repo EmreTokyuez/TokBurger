@@ -14,6 +14,8 @@ struct OrderElement: Identifiable {
 }
 
 struct CheckoutView: View {
+    @ObservedObject var shop: BurgerShop
+
     @State private var orderElements: [OrderElement] = [
         OrderElement(patty: "Beef", ingredients: ["Pickles", "Hot Sauce"]),
         OrderElement(patty: "Veggie", ingredients: ["Tomatoes", "Lettuce"])
@@ -86,8 +88,9 @@ struct CheckoutView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.gray, lineWidth: 1)
             )
-
-            Text("Total: $30") // Replace with actual price in the local currency
+            let locale = Locale(identifier: Locale.current.identifier)
+            let currency = locale.currencySymbol ?? "$"
+            Text("Total: " + String(shop.checkout()) + currency)
                 .font(.title)
                 .fontWeight(.bold)
         }
@@ -97,7 +100,7 @@ struct CheckoutView: View {
 
 struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckoutView()
+        CheckoutView(shop: BurgerShop())
     }
 }
 
