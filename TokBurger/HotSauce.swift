@@ -28,7 +28,7 @@ class HotSauce: BurgerDecorator {
     }
 
     func cost() -> Double {
-        return burger.cost()
+        return burger.cost() + 0.9
     }
     func getDescription() -> String {
         return burger.description + ", Hot Sauce"

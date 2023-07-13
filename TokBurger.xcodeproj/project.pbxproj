@@ -23,7 +23,6 @@
 		C3B38AED2A5EFD2400007A07 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEC2A5EFD2400007A07 /* Tomatoes.swift */; };
 		C3B38AEF2A5EFD3000007A07 /* Pickles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AEE2A5EFD3000007A07 /* Pickles.swift */; };
 		C3B38AF12A5F636F00007A07 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AF02A5F636F00007A07 /* SelectView.swift */; };
-		C3B38AF32A5F711900007A07 /* CartContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AF22A5F711900007A07 /* CartContinue.swift */; };
 		C3B38AF52A5F71B700007A07 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38AF42A5F71B700007A07 /* IngredientsView.swift */; };
 		C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +45,6 @@
 		C3B38AEC2A5EFD2400007A07 /* Tomatoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
 		C3B38AEE2A5EFD3000007A07 /* Pickles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickles.swift; sourceTree = "<group>"; };
 		C3B38AF02A5F636F00007A07 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
-		C3B38AF22A5F711900007A07 /* CartContinue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartContinue.swift; sourceTree = "<group>"; };
 		C3B38AF42A5F71B700007A07 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +83,6 @@
 				C391B9932A3B4035005B0C3C /* ContentView.swift */,
 				C3D7380B2A430DE300ECBDFA /* BurgerShop.swift */,
 				C3B38AF02A5F636F00007A07 /* SelectView.swift */,
-				C3B38AF22A5F711900007A07 /* CartContinue.swift */,
 				C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */,
 				C3B38AE02A5EF48C00007A07 /* Burger.swift */,
 				C3B38AF42A5F71B700007A07 /* IngredientsView.swift */,
@@ -195,7 +192,6 @@
 				C3B38ADF2A5EE88500007A07 /* BeefBurgerBuilder.swift in Sources */,
 				C3B38AE72A5EFCB800007A07 /* BurgerDecorator.swift in Sources */,
 				C391B9922A3B4035005B0C3C /* TokBurgerApp.swift in Sources */,
-				C3B38AF32A5F711900007A07 /* CartContinue.swift in Sources */,
 				C3D7380C2A430DE300ECBDFA /* BurgerShop.swift in Sources */,
 				C3B38ADD2A5EE87600007A07 /* VeggieBurgerBuilder.swift in Sources */,
 				C3B38AED2A5EFD2400007A07 /* Tomatoes.swift in Sources */,

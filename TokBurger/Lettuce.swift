@@ -28,7 +28,7 @@ class Lettuce: BurgerDecorator {
     }
 
     func cost() -> Double {
-        return burger.cost()
+        return burger.cost() + 0.3
     }
     func getDescription() -> String {
         return burger.description + ", Lettuce"

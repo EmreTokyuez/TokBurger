@@ -11,6 +11,8 @@ class BeefBurger: Burger {
     let description: String
     let country: String
     let burgerType: String?
+    var price = 5.0;
+    
 
     init(country: String) {
         self.description = "Beef Burger (\(country))"
@@ -19,7 +21,7 @@ class BeefBurger: Burger {
     }
 
     func cost() -> Double {
-        return 0;
+        return price;
         
     }
 }

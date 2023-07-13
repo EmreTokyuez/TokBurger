@@ -10,12 +10,12 @@ class Pickles: BurgerDecorator {
     var description: String
     
     
-
     let burger: Burger
 
     init(burger: Burger) {
         self.burger = burger
         self.description = ""
+        
     }
 
 
@@ -28,7 +28,7 @@ class Pickles: BurgerDecorator {
     }
 
     func cost() -> Double {
-        return burger.cost()
+        return burger.cost() + 0.7
     }
     func getDescription() -> String {
         return burger.description + ", Pickles"

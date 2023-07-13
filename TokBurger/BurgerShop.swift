@@ -14,7 +14,7 @@ import SwiftUI
 
 class BurgerShop: ObservableObject {
     @Published var isCreated = false
-    @Published var listOrders: [String: Double] = [:]
+    @Published var listOrders: [Burger];
     var builder: BurgerBuilder? = nil
 
     @Published var countryPrices: [String: Double] = [
@@ -57,14 +57,21 @@ class BurgerShop: ObservableObject {
 
     }
     
-    func createOrder(){
+    func createOrder(i: [String]){
         selectType(type: country)
+        selectIngredients(selectedIngredients: i)
+        
+        
         
         
         
     }
-    
-    func deleteOrder(){}
+    func checkout(){
+        Double total = (for burger in listOrders){}
+        }
+    }
+    func deleteOrder(b: Burger){}
+
     
 
     
