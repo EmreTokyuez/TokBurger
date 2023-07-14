@@ -5,7 +5,6 @@ struct SelectView: View {
     @State private var selectedPatty: PattyType?
     @State private var cartCount = 0;
     @State private var action2: Int? = 0
-
     let pattyOptions: [PattyType] = [.beef, .veggie]
 
     var body: some View {
@@ -59,11 +58,20 @@ struct SelectView: View {
                     
                     Button(action: {
                         self.action2 = 1
-                        shop.selectType(type: selectedPatty?.rawValue ?? "Beef")
+                        if (selectedPatty?.rawValue ?? "beefImage" == "beefImage"){
+//                            shop.selectType(type: "Beef")
+                            shop.patty = "Beef"
+
+                        }
+                        if (selectedPatty?.rawValue ?? "veggieImage" == "veggieImage"){
+//                            shop.selectType(type: "Veggie")
+                            shop.patty = "Veggie"
+
+                        }
 
                     }) {
                         Text("Continue")
-                            .foregroundColor(selectedPatty != nil ? .white : .gray)
+                            .foregroundColor(selectedPatty != nil ? .yellow : .white)
                             .padding()
                             .background(selectedPatty != nil ? Color.blue : Color.gray)
                             .cornerRadius(10)

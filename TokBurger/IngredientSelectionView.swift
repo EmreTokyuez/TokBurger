@@ -34,9 +34,6 @@ struct IngredientSelectionView: View {
         NavigationLink(destination: CheckoutView(shop: shop), tag: 1, selection: $action3) {
             EmptyView()
         }
-        NavigationLink(destination: CheckoutView(shop: shop), tag: 2, selection: $action3) {
-            EmptyView()
-        }
         VStack(spacing: 20) {
             
             Text("Select your ingredients")
@@ -60,7 +57,7 @@ struct IngredientSelectionView: View {
             
             HStack {
                            Button(action: {
-                                self.action3 = 2
+                                self.action3 = 1
             
                             }) {
                                 Image(systemName: "cart")
@@ -76,9 +73,9 @@ struct IngredientSelectionView: View {
                             Spacer()
             
                             Button(action: {
-                                self.action3 = 2
-                                
-                                shop.createOrder(i: [String])
+                                self.action3 = 1
+                                let selectedIngredients = ingredients.filter { $0.isSelected }.map { $0.name }
+                                shop.createOrder(t: shop.patty ?? "Beef", i: selectedIngredients)
             
                             }) {
                                 Text("Order")

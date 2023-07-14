@@ -13,6 +13,8 @@
 		C391B9942A3B4035005B0C3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391B9932A3B4035005B0C3C /* ContentView.swift */; };
 		C391B9962A3B4037005B0C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391B9952A3B4037005B0C3C /* Assets.xcassets */; };
 		C391B9992A3B4037005B0C3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391B9982A3B4037005B0C3C /* Preview Assets.xcassets */; };
+		C39F01872A61A33F0079E97D /* TokBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F01862A61A33F0079E97D /* TokBurgerUITests.swift */; };
+		C39F01892A61A33F0079E97D /* TokBurgerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F01882A61A33F0079E97D /* TokBurgerUITestsLaunchTests.swift */; };
 		C3B38ADB2A5EE84F00007A07 /* BurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */; };
 		C3B38ADD2A5EE87600007A07 /* VeggieBurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADC2A5EE87600007A07 /* VeggieBurgerBuilder.swift */; };
 		C3B38ADF2A5EE88500007A07 /* BeefBurgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */; };
@@ -33,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C39F018A2A61A33F0079E97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C391B9862A3B4035005B0C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C391B98D2A3B4035005B0C3C;
+			remoteInfo = TokBurger;
+		};
 		C3B38B072A5FF18000007A07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C391B9862A3B4035005B0C3C /* Project object */;
@@ -50,6 +59,9 @@
 		C391B9932A3B4035005B0C3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C391B9952A3B4037005B0C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C391B9982A3B4037005B0C3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C39F01842A61A33F0079E97D /* TokBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39F01862A61A33F0079E97D /* TokBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokBurgerUITests.swift; sourceTree = "<group>"; };
+		C39F01882A61A33F0079E97D /* TokBurgerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokBurgerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3B38ADA2A5EE84F00007A07 /* BurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerBuilder.swift; sourceTree = "<group>"; };
 		C3B38ADC2A5EE87600007A07 /* VeggieBurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeggieBurgerBuilder.swift; sourceTree = "<group>"; };
 		C3B38ADE2A5EE88500007A07 /* BeefBurgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeefBurgerBuilder.swift; sourceTree = "<group>"; };
@@ -78,6 +90,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C39F01812A61A33F0079E97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3B38B002A5FF18000007A07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +112,7 @@
 			children = (
 				C391B9902A3B4035005B0C3C /* TokBurger */,
 				C3B38B042A5FF18000007A07 /* TokBurgerTests */,
+				C39F01852A61A33F0079E97D /* TokBurgerUITests */,
 				C391B98F2A3B4035005B0C3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +122,7 @@
 			children = (
 				C391B98E2A3B4035005B0C3C /* TokBurger.app */,
 				C3B38B032A5FF18000007A07 /* TokBurgerTests.xctest */,
+				C39F01842A61A33F0079E97D /* TokBurgerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +163,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C39F01852A61A33F0079E97D /* TokBurgerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C39F01862A61A33F0079E97D /* TokBurgerUITests.swift */,
+				C39F01882A61A33F0079E97D /* TokBurgerUITestsLaunchTests.swift */,
+			);
+			path = TokBurgerUITests;
+			sourceTree = "<group>";
+		};
 		C3B38B042A5FF18000007A07 /* TokBurgerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +200,24 @@
 			productName = TokBurger;
 			productReference = C391B98E2A3B4035005B0C3C /* TokBurger.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C39F01832A61A33F0079E97D /* TokBurgerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39F018E2A61A33F0079E97D /* Build configuration list for PBXNativeTarget "TokBurgerUITests" */;
+			buildPhases = (
+				C39F01802A61A33F0079E97D /* Sources */,
+				C39F01812A61A33F0079E97D /* Frameworks */,
+				C39F01822A61A33F0079E97D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39F018B2A61A33F0079E97D /* PBXTargetDependency */,
+			);
+			name = TokBurgerUITests;
+			productName = TokBurgerUITests;
+			productReference = C39F01842A61A33F0079E97D /* TokBurgerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		C3B38B022A5FF18000007A07 /* TokBurgerTests */ = {
 			isa = PBXNativeTarget;
@@ -202,6 +250,10 @@
 					C391B98D2A3B4035005B0C3C = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					C39F01832A61A33F0079E97D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C391B98D2A3B4035005B0C3C;
+					};
 					C3B38B022A5FF18000007A07 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = C391B98D2A3B4035005B0C3C;
@@ -223,6 +275,7 @@
 			targets = (
 				C391B98D2A3B4035005B0C3C /* TokBurger */,
 				C3B38B022A5FF18000007A07 /* TokBurgerTests */,
+				C39F01832A61A33F0079E97D /* TokBurgerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +287,13 @@
 			files = (
 				C391B9992A3B4037005B0C3C /* Preview Assets.xcassets in Resources */,
 				C391B9962A3B4037005B0C3C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39F01822A61A33F0079E97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +333,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C39F01802A61A33F0079E97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39F01892A61A33F0079E97D /* TokBurgerUITestsLaunchTests.swift in Sources */,
+				C39F01872A61A33F0079E97D /* TokBurgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3B38AFF2A5FF18000007A07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +354,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C39F018B2A61A33F0079E97D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C391B98D2A3B4035005B0C3C /* TokBurger */;
+			targetProxy = C39F018A2A61A33F0079E97D /* PBXContainerItemProxy */;
+		};
 		C3B38B082A5FF18000007A07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C391B98D2A3B4035005B0C3C /* TokBurger */;
@@ -467,6 +541,40 @@
 			};
 			name = Release;
 		};
+		C39F018C2A61A33F0079E97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SZZAX7XV9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emreserver.TokBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokBurger;
+			};
+			name = Debug;
+		};
+		C39F018D2A61A33F0079E97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SZZAX7XV9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emreserver.TokBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokBurger;
+			};
+			name = Release;
+		};
 		C3B38B0A2A5FF18000007A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +636,15 @@
 			buildConfigurations = (
 				C391B99D2A3B4037005B0C3C /* Debug */,
 				C391B99E2A3B4037005B0C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39F018E2A61A33F0079E97D /* Build configuration list for PBXNativeTarget "TokBurgerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39F018C2A61A33F0079E97D /* Debug */,
+				C39F018D2A61A33F0079E97D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

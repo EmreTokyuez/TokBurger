@@ -107,10 +107,10 @@
             filePath = "TokBurger/BurgerShop.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getorders()"
-            landmarkType = "9">
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "BurgerShop"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "C1F3FAF0-EE2B-4060-A4AE-126CF1BBA65A - bbaf158bfec8a003"
